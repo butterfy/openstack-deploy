@@ -1,7 +1,7 @@
 openstack-deploy
 ================
 
-Openstack deploy shell scripts on ubuntu server.
+Openstack Havana deploy shell scripts on ubuntu server.
 
 Precondition:
  * Open CPU virtualization in BIOS
