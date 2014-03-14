@@ -18,6 +18,8 @@ init_keystone_data
 install_glance
 install_controller_neutron
 install_compute_neutron
+install_controller_cinder
+install_block_cinder
 install_controller_nova
 install_compute_nova
 install_dashboard

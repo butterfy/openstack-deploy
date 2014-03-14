@@ -1,0 +1,20 @@
+auto lo
+iface lo inet loopback
+
+auto br-ex
+iface br-ex inet static
+address EXTERNAL_IP
+netmask NETMASK
+gateway GATEWAY
+network NETWORK
+#dns-nameservers 8.8.8.8
+
+auto eth0
+iface eth0 inet manual
+up ifconfig \$IFACE 0.0.0.0 up
+down ifconfig \$IFACE down
+
+auto eth1
+iface eth1 inet static
+address INTERNAL_IP
+netmask NETMASK
