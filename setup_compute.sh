@@ -5,6 +5,8 @@ if [ `whoami` != "root" ]; then
     exit
 fi
 
+export LC_ALL=C
+
 source config.sh
 source common.sh
 
